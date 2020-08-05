@@ -1,0 +1,23 @@
+{
+  "NAME" : "7os/project-soswapp",
+  "TITLE" : "7 OS Web - project template",
+  "DESCRIPTION" : "",
+  "PRJ_KEYWORDS" : "",
+  "PRJ_AUTHOR" : "",
+  "PRJ_PUBLISHER" : "",
+  "PRJ_CREATOR" : "",
+  "PRJ_PRIMARY_COLOUR" : "#000",
+  "PRJ_SECONDARY_COLOUR" : "#ffffff",
+  "PRJ_THEME" : "light",
+  "HOMEPAGE" : "https://github.com/7os/project-soswapp",
+  "PRJ_ROOT"  : "d:/dev-src/base.sosprj",
+  "DOMAIN"  : "project.7os.io",
+  "SUPPORT" : {
+    "EMAIL" : "dev@tymfrontiers.com",
+    "WEBSITE" : "https://github.com/7os/web-project",
+    "KOLLABO" : "tymfrontiers",
+    "TWITTER" : "tymfrontiers",
+    "FACEBOOK" : "tymfrontiers",
+    "INSTAGRAM" : "tymfrontiers"
+  }
+}

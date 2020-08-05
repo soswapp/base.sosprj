@@ -1,0 +1,50 @@
+{
+    "name": "7os/base.sosprj",
+    "description": "7 OS Web - Project template",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ikechukwu Okalia",
+            "email": "dev@ikechukwuokalia.com"
+        },
+        {
+            "name": "Tym Frontiers Ltd.",
+            "email": "dev@tymfrontiers.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "tymfrontiers-cdn/php-data" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-session" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-generic" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-helper-fnvars" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-error-log" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-instance-error" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-http-header" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-http-client" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-validator": ">=0.1.0@stable",
+      "soswapp/400.soswapp" : ">=0.1@stable",
+      "soswapp/401.soswapp" : ">=0.1@stable",
+      "soswapp/403.soswapp" : ">=0.1@stable",
+      "soswapp/404.soswapp" : ">=0.1@stable",
+      "soswapp/500.soswapp" : ">=0.1@stable",
+      "soswapp/support.soswapp" : ">=0.1@stable",
+      "soswapp/policy.soswapp" : ">=0.1@stable",
+      "soswapp/terms.soswapp" : ">=0.1@stable",
+      "soswapp/contact.soswapp" : ">=0.1@stable",
+      "soswapp/about.soswapp" : ">=0.1@stable",
+      "soswapp/jquery.soswapp" : ">=0.1@stable",
+      "soswapp/js-generic.soswapp" : ">=0.1@stable",
+      "soswapp/dnav.soswapp" : ">=0.1@stable",
+      "soswapp/navlist.soswapp" : ">=0.1@stable",
+      "soswapp/file.soswapp" : ">=0.1@stable",
+      "soswapp/faderbox.soswapp" : ">=0.1@stable",
+      "soswapp/plugin.soswapp" : ">=0.1@stable",
+      "soswapp/font.awesome-soswapp" : ">=0.1@stable",
+      "soswapp/theme.soswapp" : ">=0.1@stable",
+      "soswapp/app-explorer.soswapp" : ">=0.1@stable",
+      "soswapp/prjman.soswapp" : ">=0.1@stable",
+      "michelf/php-markdown": ">=1.8@stable"
+    }
+}
