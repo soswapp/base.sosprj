@@ -1,6 +1,6 @@
 {
-    "name": "7os/base.sosprj",
-    "description": "7 OS Web - Project template",
+    "name": "soswapp/base.sosprj",
+    "description": "7 OS (PHP-based) Web - Project template",
     "type": "project",
     "license": "MIT",
     "authors": [
