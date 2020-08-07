@@ -15,10 +15,11 @@ SetEnvIf Request_URL "^.*" SHORTCUT_PATH=/dev
 # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 # RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
 ##-REMOVE-WWW-END
-#-FORCE-HTTPS-START
+##-FORCE-HTTPS-START
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-#-FORCE-HTTPS-END
+##-FORCE-HTTPS-END
+##-APP-SHORTCUT-START
 ##-tymfrontiers-cdn/user.soswapp-START
 RewriteRule ^app/user/?$ %{ENV:SHORTCUT_PATH}/tymfrontiers-cdn/user.soswapp/ [QSA,NC,L]
 RewriteRule ^app/user/(sign\-up|signup|register)$ %{ENV:SHORTCUT_PATH}/tymfrontiers-cdn/user.soswapp/pages/sign-up.php [QSA,NC,L]
@@ -27,14 +28,10 @@ RewriteRule ^app/user/(sign\-out|signout|logout)$ %{ENV:SHORTCUT_PATH}/tymfronti
 RewriteRule ^app/user/([0-9a-zA-Z\-\.]{3,})$ %{ENV:SHORTCUT_PATH}/tymfrontiers-cdn/user.soswapp/pages/$1.php [QSA,NC,L]
 RewriteRule ^app/user/(.*)$ %{ENV:SHORTCUT_PATH}/tymfrontiers-cdn/user.soswapp/$1 [QSA,NC,L]
 ##-tymfrontiers-cdn/user.soswapp-END
-### 7 OS Theming and plugins
-##-7os-default-START
-##-7os-default-END
-##-APP-SHORTCUT-END
-# APP-LOCATOR-START
-RewriteRule ^app/(400|401|403|404|500|faqs?|terms|policy|support|prjman|navlist|admin\-navlist)/?$ /app/soswapp/$1.soswapp/ [QSA,NC,L]
+##-APP-LOCATOR-START
+RewriteRule ^app/(400|401|403|404|500|faqs?|terms|policy|support|prjman|navlist)/?$ /app/soswapp/$1.soswapp/ [QSA,NC,L]
 RewriteRule ^app/policy/([a-zA-Z0-9\-]{3,16})/?$ /app/soswapp/policy.soswapp/loader.php?sub=$1 [QSA,NC,L]
-RewriteRule ^app/(400|401|403|404|500|faqs?|terms|policy|support|prjman|navlist|admin\-navlist)/(.*)?$ /app/soswapp/$1.soswapp/$2 [QSA,NC,L]
+RewriteRule ^app/(400|401|403|404|500|faqs?|terms|policy|support|prjman|navlist)/(.*)?$ /app/soswapp/$1.soswapp/$2 [QSA,NC,L]
 RewriteRule ^app/(contact\-us|contact|contactus)/?$ /app/soswapp/contact.soswapp/ [QSA,NC,L]
 RewriteRule ^app/(contact\-us|contact|contactus)/(.*)?$ /app/soswapp/contact.soswapp/$2 [QSA,NC,L]
 RewriteRule ^app/(about\-us|about|aboutus)/?$ /app/soswapp/about.soswapp/ [QSA,NC,L]
@@ -47,7 +44,8 @@ RewriteRule ^app/file/([a-zA-Z0-9\-\.\_]+)$ /app/soswapp/file.soswapp/?fname=$1 
 #
 RewriteRule ^(app|application)/([A-Za-z0-9\-\.\_]{3,})/([A-Za-z0-9\-\.\_]{3,})/?$ %{ENV:SHORTCUT_PATH}/$2/$3/ [QSA,NC,L]
 RewriteRule ^(app|application)/([A-Za-z0-9\-\.\_]{3,})/([A-Za-z0-9\-\.\_]{3,})/(.*)$ %{ENV:SHORTCUT_PATH}/$2/$3/$4 [QSA,NC,L]
-# APP-LOCATOR-END
+##-APP-LOCATOR-END
+##-APP-SHORTCUT-END
 ##-CUSTOM-HTTP-ERROR-START
 ErrorDocument 400 /app/400/?request=%{THE_REQUEST}
 ErrorDocument 401 /app/401/?request=%{THE_REQUEST}
